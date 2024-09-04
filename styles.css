@@ -68,10 +68,12 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    flex-direction: column;
     align-items: center; /* Centraliza os itens horizontalmente */
+    box-sizing: border-box;
 
     width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    height: 46vh;   /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 1rem; /* Espaçamento interno */
@@ -98,7 +100,6 @@ section button:hover {
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #30475E; /* Cor do texto dos links */
-    text-align: center; /* Centraliza o texto */
 }
 
 .item-resultado p {
