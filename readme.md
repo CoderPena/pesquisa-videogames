@@ -20,4 +20,3 @@ Este projeto web tem como objetivo criar um catálogo online de consoles de vide
 
 ## Como Acessar
 <a href="https://pesquisa-videogames.vercel.app/" target="_blank">https://pesquisa-videogames.vercel.app/</a>
-
