@@ -1,85 +1,92 @@
+/* Importa a fonte 'Montserrat' do Google Fonts, incluindo variações de peso e estilo */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
+/* Estilos globais para o corpo da página */
+body {
+    display: flex; /* Define o layout como Flexbox */
+    flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
     justify-content: center; /* Centraliza os itens verticalmente */
-    height: 100vh; /* Preenche a altura total da viewport */
-
-    background-color: #191970;
-    font-family: "Montserrat", sans-serif;    
-    color: #fff; /* Branco */
-    font-size: 18px;
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
+    height: 100vh; /* Define a altura da página para preencher a viewport */
+    background-color: #191970; /* Define a cor de fundo */
+    font-family: "Montserrat", sans-serif; /* Aplica a fonte 'Montserrat' */
+    color: #fff; /* Define a cor do texto como branco */
+    font-size: 18px; /* Define o tamanho base da fonte */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
 }
 
-/* Estiliza os títulos h1 */
+/* Estilos para o título principal (h1) */
 h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    text-align: center; /* Alinha o texto ao centro */
-    color: #58c5e9;
+    font-size: 2.5rem; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    color: #58c5e9; /* Define a cor do texto */
 }
 
-h1 sup {
-    font-size: 50%;
+/* Estilos para elementos em sobrescrito */
+.superscript {
+    vertical-align: super; /* Alinha verticalmente como sobrescrito */
+    font-size: 50%; /* Reduz o tamanho da fonte */
+    line-height: 1; /* Remove espaçamento entre linhas */
 }
 
-/* Estiliza as seções da página */
+/* Estilos para a seção de pesquisa */
 .pesquisa {
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    display: flex; /* Define o layout como Flexbox */
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 2rem; /* Espaçamento entre os elementos */
 }
 
-/* Estiliza os inputs dentro das seções */
+/* Estilos para os campos de entrada de texto */
 .pesquisa input {
-    width: 30rem; /* Largura dos inputs */
+    width: 30rem; /* Define a largura dos campos de entrada */
     border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 1rem; /* Define o espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
     color: #45474B; /* Cor do texto */
     font-size: 1.5rem; /* Tamanho da fonte */
     box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
+/* Estilos para o texto placeholder dos campos de entrada */
 .pesquisa input::placeholder {
-    color: #4110f3d0; /* Substitua '#ccc' pela cor desejada */
+    color: #4110f3d0; /* Cor do texto do placeholder */
 }
 
-/* Estiliza os botões dentro das seções */
+/* Estilos para os botões de pesquisa */
 .pesquisa button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    padding: 0.8rem 1.2rem; /* Define o espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
-    border-radius: 1rem; /* Borda arredondada */
+    border-radius: 1rem; /* Define borda arredondada */
     background-color: #30475E; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 1.5rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    cursor: pointer; /* Muda o cursor para indicar interatividade */
 }
+
+/* Estilos para o botão quando o mouse passa por cima */
 .pesquisa button:hover {
-    background-color: #5781ab; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+    background-color: #5781ab; /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+/* Estilos para a caixa de resultados da pesquisa */
 .resultados-pesquisa {
-    flex-direction: column;
+    display: flex; /* Define o layout como Flexbox */
+    flex-direction: column; /* Alinha os itens verticalmente */
     align-items: center; /* Centraliza os itens horizontalmente */
-    box-sizing: border-box;
-
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh;   /* Altura máxima da caixa de resultados */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    width: 60rem; /* Define a largura máxima da caixa de resultados */
+    height: 46vh; /* Define a altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
+    padding: 1rem; /* Define o espaçamento interno */
     border-radius: 0.6rem; /* Borda arredondada */
 }
 
-/* Estiliza cada item de resultado */
+/* Estilos para cada item de resultado */
 .item-resultado {
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
@@ -88,94 +95,103 @@ h1 sup {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
+/* Estilos para os títulos dentro dos itens de resultado */
 .item-resultado h2 {
     font-size: 1.5rem; /* Tamanho da fonte */
     color: #222831; /* Cor do texto */
     text-align: center; /* Centraliza o texto */
 }
 
-/* Estiliza os links dentro dos itens de resultado */
+/* Estilos para os links dentro dos itens de resultado */
 .item-resultado a {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
     color: #30475E; /* Cor do texto dos links */
 }
 
+/* Estilos para os parágrafos dentro dos itens de resultado */
 .item-resultado p {
     text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #060606; /* Cor do texto dos links */
+    color: #060606; /* Cor do texto */
 }
 
-/* Estiliza os links quando são passados o mouse sobre */
+/* Estilos para os links ao passar o mouse */
 .item-resultado a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
+/* Estilos para a descrição dentro dos itens de resultado */
 .descricao-meta {
     color: #45474B; /* Cor do texto */
     margin: 0.5rem 0; /* Margem acima e abaixo */
 }
 
-footer{
-    text-align: center;
-    font-size: 1rem;
-    color: #191970;
-    background-color: #58c5e9;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+/* Estilos para o rodapé */
+footer {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    color: #191970; /* Cor do texto */
+    background-color: #58c5e9; /* Cor de fundo */
+    width: 100%; /* Largura total */
+    position: absolute; /* Posiciona o rodapé na parte inferior */
+    bottom: 0; /* Alinha ao fundo */
 }
 
+/* Estilos para a mensagem de erro */
+.mensagem-erro {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Fonte em negrito para destaque */
+    color: #ff0000; /* Cor vermelha para chamar atenção */
+    margin-top: 1rem; /* Espaçamento acima */
+}
+
+/* Estilos responsivos para tablets */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
-        letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras */
     }
 
     section input {
-        width: 25rem; /* Largura dos inputs em telas menores */
-        padding: 0.8rem; /* Espaçamento interno em telas menores */
+        width: 25rem; /* Largura dos inputs */
+        padding: 0.8rem; /* Espaçamento interno */
     }
 
     .resultados-pesquisa {
-        width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        width: 40rem; /* Largura da caixa de resultados */
+        height: 40vh; /* Altura da caixa de resultados */
     }
 
     .item-resultado h2 {
-        font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
+        font-size: 1.3rem; /* Tamanho da fonte dos títulos */
     }
 }
 
-/* Responsividade para celulares */
+/* Estilos responsivos para celulares */
 @media (max-width: 480px) {
-
     h1 {
-        font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
-        letter-spacing: 0.1rem; /* Espaçamento entre letras em telas pequenas */
+        font-size: 1.8rem; /* Tamanho da fonte */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
     }
 
     section input {
-        width: 17rem; /* Largura total dos inputs em telas pequenas */
+        width: 17rem; /* Largura dos inputs */
     }
 
     section button {
-        padding: 0.6rem 1rem; /* Espaçamento interno do botão em telas pequenas */
-        font-size: 0.9rem; /* Tamanho da fonte do botão em telas pequenas */
+        padding: 0.6rem 1rem; /* Espaçamento interno do botão */
+        font-size: 0.9rem; /* Tamanho da fonte do botão */
     }
 
     .resultados-pesquisa {
-        width: 90%; /* Largura da caixa de resultados em telas pequenas */
-        height: 50vh; /* Altura da caixa de resultados em telas pequenas */
+        width: 90%; /* Largura da caixa de resultados */
+        height: 50vh; /* Altura da caixa de resultados */
     }
 
     .item-resultado h2 {
-        font-size: 1.1rem; /* Tamanho da fonte dos títulos em telas pequenas */
+        font-size: 1.1rem; /* Tamanho da fonte dos títulos */
     }
 
     footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 0.9rem; /* Tamanho da fonte do rodapé */
     }
 }

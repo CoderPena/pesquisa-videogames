@@ -1,47 +1,54 @@
 <!DOCTYPE html>
-<html lang="pr-br">
+<html lang="pt-br">
 <head>
-    <meta charset="utf-8" />
+    <!-- Define o conjunto de caracteres para UTF-8, garantindo a exibição correta de caracteres especiais -->
+    <meta charset="utf-8">
+    
+    <!-- Define a compatibilidade com navegadores antigos, como o Internet Explorer -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Configura a viewport para garantir que o layout se ajuste corretamente em dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--link rel="stylesheet" href="reset.css"-->
-    <!--link rel="stylesheet" href="normalize.css"-->
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>Vídeogames</title>
+    
+    <!-- Links para folhas de estilo externas (comentadas, mas disponíveis se necessário) -->
+    <!--link rel="stylesheet" href="reset.css"--> <!-- Define estilos base para resetar as configurações padrões dos navegadores -->
+    <!--link rel="stylesheet" href="normalize.css"--> <!-- Normaliza estilos entre diferentes navegadores -->
+    
+    <!-- Link para a folha de estilo principal da página -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Videogames</title>
 </head>
 <body>
-    <header><h1>Pesquisa Consoles Videogames <sup>Clássicas</sup></h1></header>
+    <!-- Cabeçalho da página com o título principal -->
+    <header>
+        <h1>Pesquisa Consoles Videogames <span class="superscript">Clássicas</span></h1>
+    </header>
+    
+    <!-- Conteúdo principal da página -->
     <main>
+        <!-- Seção de pesquisa com campo de entrada de texto e botão de pesquisa -->
         <section class="pesquisa">
-            <input type="text" placeholder="Digite o nome do videogame">
+            <!-- Campo de entrada de texto para digitar o termo de pesquisa -->
+            <input type="text" placeholder="Digite o console de videogame" id="campo-pesquisa">
+            
+            <!-- Botão que ativa a função de pesquisa ao ser clicado -->
             <button onclick="pesquisar()">Pesquisar</button>
         </section>
+        
+        <!-- Seção onde os resultados da pesquisa serão exibidos -->
         <section class="resultados-pesquisa" id="resultados-pesquisa">
-            <!-- <div class="item-resultado">
-                <h2 class="descricao-meta"><a href="https://atari.com/" target="_blank">Atari</a></h2>
-                <p>O Atari foi um dos pioneiros dos videogames, marcando a infância de muitas pessoas. Com gráficos simples, mas viciantes, e uma jogabilidade inovadora para a época, o Atari 2600 revolucionou a indústria e deixou um legado que perdura até hoje, inspirando novas gerações de jogadores.</p>
-                <a href="https://www.atari2600.com.br/" target="_blank">Atari Jogos online</a>
-            </div>
-            <div class="item-resultado">
-                <h2 class="descricao-meta"><a href="https://www.playstation.com/" target="_blank">PlayStation</a></h2>
-                <p>O PlayStation da Sony marcou a transição para os jogos em 3D, oferecendo uma biblioteca de jogos diversificada e gráficos impressionantes para a época. Títulos como Final Fantasy VII, Gran Turismo e Resident Evil se tornaram verdadeiros clássicos.</p>
-                <a href="https://store.playstation.com/pt-br/pages/latest" target="_blank">PlayStation Store</a> 
-            </div>
-            <div class="item-resultado">
-                <h2 class="descricao-meta"><a href="https://www.nintendo.com/" target="_blank">Nintendo 64</a></h2>
-                <p>O Nintendo 64 revolucionou os gráficos 3D em consoles domésticos, com jogos icônicos como Super Mario 64 e The Legend of Zelda: Ocarina of Time. Seu controle analógico e cartuchos de 64 bits proporcionaram uma experiência de jogo única e memorável.</p>
-                <a href="https://www.jogos360.com.br/nintendo_64/" target="_blank">Jogos N64</a> 
-            </div>            
-            <div class="item-resultado">
-                <h2 class="descricao-meta"><a href="https://www.nintendo.com/" target="_blank">LOREN IPSUM</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <a href="https://www.jogos360.com.br/nintendo_64/" target="_blank">Jogos N64</a> 
-            </div>             -->
         </section>
     </main>
-    <footer><p>2024 - Consoles de Videogames Clássicas. Todos os direitos reservados.</p></footer>
+    
+    <!-- Rodapé da página com informações de direitos autorais -->
+    <footer>
+        <p>2024 - Consoles de Videogames Clássicas. Todos os direitos reservados.</p>
+    </footer>
 
-    <script src="dados.js"></script>
-    <script src="script.js"></script>
+    <!-- Scripts JavaScript para manipulação de dados e funcionalidades da página -->
+    <script src="dados.js"></script> <!-- Script contendo os dados a serem pesquisados -->
+    <script src="script.js"></script> <!-- Script principal com as funções JavaScript para interatividade -->
 </body>
 </html>
