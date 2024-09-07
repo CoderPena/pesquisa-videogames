@@ -18,3 +18,5 @@ Este projeto web tem como objetivo criar um catálogo online de consoles de vide
    ```bash
    git clone https://seu-repositorio.git
 
+## Como Acessar
+https://pesquisa-videogames.vercel.app/
